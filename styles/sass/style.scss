@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 600px;
+    height: 560px;
+    // background-color: red;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.container-img{
+    width: 100%;
+    // background-color: lightblue;
+    
+    img{
+        width: 100%;
+        object-fit: contain;
+        display: none;
+    }
+    .d-img{
+        display: block;
+    }
+
+}
+.button{
+    .back , .next{
+        font-size: 2rem;
+        background-color: #1616167e;
+        color: rgb(224, 3, 3);
+        padding: 0.5rem 1.2rem;
+        height: 30px;
+        line-height: 0px;
+        border: none;
+        border-radius: .5rem;
+        -webkit-border-radius: .5rem;
+        -moz-border-radius: .5rem;
+        -ms-border-radius: .5rem;
+        -o-border-radius: .5rem;
+        position: absolute;
+    }
+    .back{
+        top: 38%;
+        left: 5%;
+    }
+    .next{
+        top: 38%;
+        right: 5%;
+    }
+    .back:hover , .next:hover{
+        background-color: black;
+    }
+}
+
+
+
+.container-dots{
+    // background-color: red;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    column-gap: 10px;
+    // position: absolute;
+    // bottom: 0;
+    // right: 0;
+    .dots{
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        background-color: rgba(0, 0, 0, 0.445);
+        display: inline-block;
+        
+    }
+    .dot-color{
+        background-color: black;
+    }
+}
+
+.container-num-slide{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 0;
+
+}
+
+
+
+@keyframes blurshow {
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.animation{
+    animation-name: blurshow;
+    animation-duration: 2s;
+}
